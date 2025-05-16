@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phoneword.MainPage"> <!--Simil a usar using namespace Phoneword-->
+    <VerticalStackLayout Spacing="15" Padding="20" >
+        <Label Text="Test MAUI - Miguel Hidalgo"
+       FontSize="30"/>
+        <Label Text="Introduce valores para traducir"
+               FontSize="20"/>
+        <Entry x:Name="entryNumText"
+               Placeholder="1-555-NETMAUI"/>
+        <Button x:Name="btnTraducir"
+                Text="Traducir"
+                Clicked= "OnTranslate"/>
+        <Button x:Name="CallButon"
+                Text="LLamar"
+                IsEnabled = "False"
+                Clicked="OnCall"/>
+        
+    </VerticalStackLayout>
+
+</ContentPage>
